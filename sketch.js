@@ -1,20 +1,20 @@
-const CANVAS_WIDTH = 800;
+const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 600;
 const BG_COLOR = [254, 249, 232];
 let kiki;
 let kikiAnim;
 
 function preload() {
-  const kikiSpritesheet = loadSpriteSheet("img/kiki.png", 64, 64, 6);
+  const kikiSpritesheet = loadSpriteSheet("img/kiki.png", 32, 32, 6);
   kikiAnim = loadAnimation(kikiSpritesheet);
-  kiki = createSprite(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, 64, 64);
+  kiki = createSprite(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, 32, 32);
   kiki.moveSpeed = 5;
 }
 
 function setup() {
   createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   kiki.addAnimation("move", kikiAnim);
-  kiki.addImage("still", loadImage("img/kiki1.png"));
+  kiki.addImage("still", loadImage("img/kiki_still.png"));
   kiki.setDefaultCollider();
 }
 
