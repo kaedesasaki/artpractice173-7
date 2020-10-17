@@ -5,9 +5,9 @@ let kiki;
 let kikiAnim;
 
 function preload() {
-  const kikiSpritesheet = loadSpriteSheet("img/kiki.png", 254, 249, 232);
+  const kikiSpritesheet = loadSpriteSheet("img/kiki.png", 64, 64, 6);
   kikiAnim = loadAnimation(kikiSpritesheet);
-  kiki = createSprite(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 254, 249, 232);
+  kiki = createSprite(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, 64, 64);
   kiki.moveSpeed = 5;
 }
 
