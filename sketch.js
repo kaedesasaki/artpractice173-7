@@ -1,6 +1,6 @@
 const CANVAS_WIDTH = 800;
 const CANVAS_HEIGHT = 600;
-const BG_COLOR = [122, 240, 107];
+const BG_COLOR = [254, 249, 232];
 let kiki;
 let kikiAnim;
 
